@@ -18,7 +18,7 @@ export default function Projects() {
             <div className="flex flex-col lg:flex-row justify-center gap-10">
               <div className="flex flex-col items-center">
                 <a href="/blog/diner-restaurant">
-                  <img className="h-48 lg:h-56 shadow-lg " src="borger.png" />
+                  <img className="h-48 lg:h-56 shadow-lg " src="borger.png" alt="Project home page with top-nav and a large picture of a burger."/>
                   <h3 className="text-2xl text-center font-title">
                     Diner Restaurant Redesign
                   </h3>
