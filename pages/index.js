@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Menu } from "@headlessui/react";
 import Image from "next/image";
+import Spline from "@splinetool/react-spline";
 
 export function TopNavHamburger() {
   return (
@@ -101,12 +102,21 @@ export default function Home() {
       <div className="flex flex-row w-screen min-h-screen">
         <div className="flex flex-1 flex-col">
           <TopNav />
-          <div className="text-4xl text-center pt-28 font-title title-text-shadow">
-            Hi!
+          <div className="lg:hidden">
+            <div className="text-4xl text-center pt-28 font-title title-text-shadow">
+              Hi!
+            </div>
+            <div className="text-2xl text-center pt-14 font-title">
+              I'm Evelyn, a self-taught web developer with an interest in 3D
+              interfaces.
+            </div>
           </div>
-          <div className="text-2xl text-center pt-14 font-title">
-            I'm Evelyn, a self-taught web developer with an interest in 3D
-            interfaces.
+
+          <div className="hidden lg:block flex-1">
+            <Spline
+              scene="https://prod.spline.design/1iuzB91Eo3LbmJEp/scene.splinecode"
+              className="pointer-events-none flex-1"
+            />
           </div>
         </div>
         <Stripe />
