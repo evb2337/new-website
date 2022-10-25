@@ -16,9 +16,11 @@ export default function Blog() {
           {/* <div className="text-2xl text-center pt-28">title</div> */}
           <div className="flex flex-col p-5 gap-5 lg:pt-28 lg:font-title">
             <div className="border-solid border-4 blog-style text-xl lg:text-2xl hover:bg-[#A88170]">
+              <a className="block p-2 lg:p-10 " href="./blog/3d-app-homepage">3D App Homepage</a>
+            </div>
+            <div className="border-solid border-4 blog-style text-xl lg:text-2xl hover:bg-[#A88170]">
               <a className="block p-2 lg:p-10 " href="./blog/diner-restaurant">Redesigning a Popular Diner Website</a>
             </div>
-            
           </div>
         </div>
         <Stripe />
